@@ -1,1 +1,745 @@
-<!DOCTYPE html><html lang="zh-CN" data-default-color-scheme="auto"><head><meta charset="UTF-8"><link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png"><link rel="icon" href="/img/icon.png"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="theme-color" content="#26465f"><meta name="author" content="mathematics128"><meta name="keywords" content=""><meta name="description" content="来自你的消息: 如何在github pages上用hexo作为框架搭建个人博客？ 来自ChatAI的消息: 以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：   准备工作：  确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 yourusername.github.io ，其中 yourusername 是你的 GitHub 用户名。 确保你已经安"><meta property="og:type" content="article"><meta property="og:title" content="More than Blog"><meta property="og:url" content="https://mathematics128.github.io/%E6%90%AD%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81%E6%8A%80%E6%9C%AF%E5%8A%9B%E5%90%97/chatai-659120429622/"><meta property="og:site_name" content="More than Blog"><meta property="og:description" content="来自你的消息: 如何在github pages上用hexo作为框架搭建个人博客？ 来自ChatAI的消息: 以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：   准备工作：  确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 yourusername.github.io ，其中 yourusername 是你的 GitHub 用户名。 确保你已经安"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2023-10-04T12:44:45.915Z"><meta property="article:modified_time" content="2023-07-25T12:44:46.941Z"><meta property="article:author" content="mathematics128"><meta name="twitter:card" content="summary_large_image"><title>More than Blog</title><link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css"><link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css"><link rel="stylesheet" href="/css/main.css"><link id="highlight-css" rel="stylesheet" href="/css/highlight.css"><link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css"><script id="fluid-configs">var Fluid=window.Fluid||{};Fluid.ctx=Object.assign({},Fluid.ctx);var CONFIG={hostname:"mathematics128.github.io",root:"/",version:"1.9.5-a",typing:{enable:!0,typeSpeed:70,cursorChar:"_",loop:!1,scope:[]},anchorjs:{enable:!0,element:"h1,h2,h3,h4,h5,h6",placement:"left",visible:"hover",icon:""},progressbar:{enable:!0,height_px:3,color:"#29d",options:{showSpinner:!1,trickleSpeed:100}},code_language:{enable:!0,default:"TEXT"},copy_btn:!0,image_caption:{enable:!0},image_zoom:{enable:!0,img_url_replace:["",""]},toc:{enable:!0,placement:"right",headingSelector:"h1,h2,h3,h4,h5,h6",collapseDepth:0},lazyload:{enable:!0,loading_img:"/img/loading.gif",onlypost:!1,offset_factor:2},web_analytics:{enable:!1,follow_dnt:!0,baidu:null,google:{measurement_id:null},tencent:{sid:null,cid:null},woyaola:null,cnzz:null,leancloud:{app_id:null,app_key:null,server_url:null,path:"window.location.pathname",ignore_local:!1}},search_path:"/local-search.xml",include_content_in_search:!0};if(CONFIG.web_analytics.follow_dnt){var dntVal=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack;Fluid.ctx.dnt=dntVal&&(dntVal.startsWith("1")||dntVal.startsWith("yes")||dntVal.startsWith("on"))}</script><script src="/js/utils.js"></script><script src="/js/color-schema.js"></script><meta name="generator" content="Hexo 6.3.0"></head><body><header><div class="header-inner" style="height:50vh"><nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"><div class="container"><a class="navbar-brand" href="/"><strong>mathematics128</strong> </a><button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon"><span></span><span></span><span></span></div></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto text-center"><li class="nav-item"><a class="nav-link" href="/"><i class="iconfont icon-home-fill"></i> <span>首页</span></a></li><li class="nav-item"><a class="nav-link" href="/archives/"><i class="iconfont icon-archive-fill"></i> <span>归档</span></a></li><li class="nav-item"><a class="nav-link" href="/categories/"><i class="iconfont icon-category-fill"></i> <span>分类</span></a></li><li class="nav-item"><a class="nav-link" href="/tags/"><i class="iconfont icon-tags-fill"></i> <span>标签</span></a></li><li class="nav-item"><a class="nav-link" href="/about/"><i class="iconfont icon-user-fill"></i> <span>关于</span></a></li><li class="nav-item"><a class="nav-link" href="/links/"><i class="iconfont icon-link-fill"></i> <span>友链</span></a></li><li class="nav-item" id="search-btn"><a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search"><i class="iconfont icon-search"></i></a></li><li class="nav-item" id="color-toggle-btn"><a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle"><i class="iconfont icon-dark" id="color-toggle-icon"></i></a></li></ul></div></div></nav><div id="banner" class="banner" parallax="true" style="background:url(/img/banner.jpg) no-repeat center center;background-size:cover"><div class="full-bg-img"><div class="mask flex-center" style="background-color:rgba(0,0,0,.3)"><div class="banner-text text-center fade-in-up"><div class="h2"><span id="subtitle" data-typed-text=""></span></div><div class="mt-3"><span class="post-meta"><i class="iconfont icon-date-fill" aria-hidden="true"></i> <time datetime="2023-10-04 20:44" pubdate>2023年10月4日 晚上</time></span></div><div class="mt-1"><span class="post-meta mr-2"><i class="iconfont icon-chart"></i> 2.9k 字 </span><span class="post-meta mr-2"><i class="iconfont icon-clock-fill"></i> 12 分钟</span></div></div></div></div></div></div></header><main><div class="container-fluid nopadding-x"><div class="row nomargin-x"><div class="side-col d-none d-lg-block col-lg-2"></div><div class="col-lg-8 nopadding-x-md"><div class="container nopadding-x-md" id="board-ctn"><div id="board"><article class="post-content mx-auto"><h1 id="seo-header"></h1><div class="markdown-body"><h2 id="来自你的消息">来自你的消息:</h2><p>如何在github pages上用hexo作为框架搭建个人博客？</p><h2 id="来自ChatAI的消息">来自ChatAI的消息:</h2><p>以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：</p><ol><li><p>准备工作：</p><ul><li>确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 <code>yourusername.github.io</code> ，其中 <code>yourusername</code> 是你的 GitHub 用户名。</li><li>确保你已经安装了 Node.js，可以在命令行中运行 <code>node -v</code> 来检查是否已安装。</li><li>安装 Git，可以在命令行中运行 <code>git --version</code> 来检查是否已安装。</li></ul></li><li><p>初始化 Hexo 项目：</p><ul><li>在任意位置创建一个新的文件夹来存储你的 Hexo 项目。</li><li>在命令行中切换到该文件夹，并运行以下命令来初始化 Hexo 项目：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install -g hexo-cli        // 全局安装 Hexo</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo init myblog               // 初始化 Hexo 项目</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">cd</span> myblog                      // 进入项目文件夹</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install                    // 安装 Hexo 的依赖项</span><br></code></pre></td></tr></table></figure></li></ul></li><li><p>配置 Hexo：</p><ul><li>打开 <code>_config.yml</code> 文件，根据个人需求进行配置。至少需要配置 <code>url</code> 和 <code>deploy</code>：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">url:</span> <span class="hljs-string">https://yourusername.github.io</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:yourusername/yourusername.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure></li></ul></li><li><p>编写博客：</p><ul><li>使用 Hexo 命令来创建新的文章：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo new <span class="hljs-string">&quot;My First Blog&quot;</span></span><br></code></pre></td></tr></table></figure></li><li>使用 Markdown 或其他支持的语法来编写博客内容，在生成的 Markdown 文件中进行编辑。</li></ul></li><li><p>预览博客：</p><ul><li>运行以下命令来在本地预览你的博客：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo server</span><br></code></pre></td></tr></table></figure></li><li>在浏览器中访问 <code>http://localhost:4000</code>，即可查看你的博客。</li></ul></li><li><p>部署到 GitHub Pages：</p><ul><li>首先，使用以下命令生成静态网站文件：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo generate</span><br></code></pre></td></tr></table></figure></li><li>然后，运行以下命令将生成的文件部署到 GitHub Pages 上：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo deploy</span><br></code></pre></td></tr></table></figure></li></ul></li><li><p>查看博客：</p><ul><li>现在，你可以在浏览器中访问 <code>https://yourusername.github.io</code> 来查看你的个人博客了。</li></ul></li></ol><p>请注意，以上步骤仅提供了 Hexo 的基础配置和部署到 GitHub Pages 的流程。要深入了解 Hexo 的更多功能和定制选项，请参考官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p><h2 id="来自你的消息-2">来自你的消息:</h2><p>如何在debian 11 上安装node.js？</p><h2 id="来自ChatAI的消息-2">来自ChatAI的消息:</h2><p>在 Debian 11 上安装 Node.js 可以按照以下步骤进行：</p><ol><li><p>更新系统：<br>执行以下命令以获取最新的软件包列表并升级系统：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt update<br>sudo apt upgrade<br></code></pre></td></tr></table></figure></li><li><p>安装 Node.js：</p><ul><li>在 Debian 11 中，可以通过 Node.js 官方的 NodeSource 仓库进行安装。</li><li>首先，安装 Node.js 和 npm 的依赖项：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt install curl dirmngr apt-transport-https lsb-release ca-certificates<br></code></pre></td></tr></table></figure></li><li>下载并添加 NodeSource 仓库的 GPG 密钥：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource.gpg<br></code></pre></td></tr></table></figure></li><li>添加 NodeSource 仓库到 APT 的源列表中：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">echo &quot;deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node $(lsb_release -s -c) main&quot; | sudo tee /etc/apt/sources.list.d/nodesource.list<br></code></pre></td></tr></table></figure></li><li>更新仓库并安装 Node.js：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt update<br>sudo apt install nodejs<br></code></pre></td></tr></table></figure></li></ul></li><li><p>验证安装：</p><ul><li>可以通过运行以下命令来验证 Node.js 和 npm 是否成功安装：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">node -v<br>npm -v<br></code></pre></td></tr></table></figure></li></ul></li></ol><p>现在，你已经成功在 Debian 11 上安装了 Node.js。你可以使用 Node.js 来运行 JavaScript 应用程序、搭建服务器、构建工具等等。根据你的需求，你还可以安装全局的 npm 包来扩展 Node.js 的功能。</p><p>请注意，上述步骤假设你使用具备超级用户权限（sudo）的普通用户进行操作。</p><h2 id="来自你的消息-3">来自你的消息:</h2><p>如何在ArchLinux上安装nodejs？</p><h2 id="来自ChatAI的消息-3">来自ChatAI的消息:</h2><p>在 Arch Linux 上安装 Node.js 可以按照以下步骤进行：</p><ol><li><p>更新系统：<br>执行以下命令以获取最新的软件包列表并升级系统：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo pacman -Syu<br></code></pre></td></tr></table></figure></li><li><p>安装 Node.js：</p><ul><li>在 Arch Linux 中，可以通过官方软件库（Arch Linux 共同的软件库）进行安装。</li><li>运行以下命令以安装 Node.js 和 npm：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo pacman -S nodejs npm<br></code></pre></td></tr></table></figure></li></ul></li><li><p>验证安装：</p><ul><li>可以通过运行以下命令来验证 Node.js 和 npm 是否成功安装：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">node -v<br>npm -v<br></code></pre></td></tr></table></figure></li></ul></li></ol><p>现在，你已经成功在 Arch Linux 上安装了 Node.js。你可以使用 Node.js 来运行 JavaScript 应用程序、搭建服务器、构建工具等等。根据你的需求，你还可以安装全局的 npm 包来扩展 Node.js 的功能。</p><p>请注意，上述步骤假设你使用具备超级用户权限（sudo）的普通用户进行操作。</p><h2 id="来自你的消息-4">来自你的消息:</h2><p>为什么arch可以直接用官方软件源而debian必须要添加nodesource仓库？</p><h2 id="来自ChatAI的消息-4">来自ChatAI的消息:</h2><p>在 Arch Linux 和 Debian 这两个发行版中，Node.js 的软件包管理方式是有所不同的，因此安装方法也略有差异。</p><ol><li><p>Arch Linux：<br>Arch Linux 采用滚动更新模型，其官方软件库（Arch Linux 共同的软件库）提供了大量常用的软件包，包括最新版本的 Node.js。因此，你可以直接通过使用系统包管理器 <code>pacman</code> 来安装 Node.js 和 npm。</p></li><li><p>Debian：<br>Debian 是一个基于稳定性和可靠性的发行版，其官方软件库提供了经过广泛测试和验证的软件包。但是，对于一些更新频繁且发展迅速的软件，如 Node.js，官方软件库可能提供的版本相对较旧。为了让用户能够体验到最新版本的 Node.js，可以使用 NodeSource 这样的第三方仓库，它专门提供了最新的 Node.js 软件包。</p></li></ol><p>因此，在 Debian 中安装 Node.js 时，你需要添加 NodeSource 仓库以获取最新版本的 Node.js 软件包。这样可以确保你拥有最新的功能和修复的 bug。</p><p>总结起来，Arch Linux 之所以可以直接使用官方软件源进行安装，是因为官方软件库中已经提供了最新的 Node.js 软件包；而在 Debian 中，添加 NodeSource 仓库可以使用户能够获得最新版本的 Node.js 软件包，以适应不断发展和更新的需求。</p></div><hr><div><div class="post-metas my-3"></div></div><article id="comments" lazyload><div id="giscus" class="giscus"></div><script type="text/javascript">Fluid.utils.loadComments("#giscus",(function(){var t={repo:"mathematics128/mathematics128.github.io","repo-id":"R_kgDOJ2XLRg",category:"Announcements","category-id":"DIC_kwDOJ2XLRs4CYGEw","theme-light":"light","theme-dark":"dark",mapping:"url","reactions-enabled":1,"emit-metadata":0,"input-position":"top",lang:"zh-CN",strict:0,loading:"lazy"},e={};for(let i in t){if(!i.startsWith("theme-"))e[i.startsWith("data-")?i:"data-"+i]=t[i]}window.GiscusThemeLight="light",window.GiscusThemeDark="dark",e["data-theme"]="dark"===document.documentElement.getAttribute("data-user-color-scheme")?"dark":"light";for(let t in e){var i=e[t];null!=i&&""!==i||delete e[t]}var a=document.createElement("script");a.setAttribute("src","https://giscus.app/client.js"),a.setAttribute("crossorigin","anonymous");for(let t in e)a.setAttribute(t,e[t]);var n=document.getElementsByTagName("script"),r=n.length>0?n[n.length-1]:document.head||document.documentElement;r.parentNode.insertBefore(a,r.nextSibling)}))</script><noscript>Please enable JavaScript to view the comments</noscript></article></article></div></div></div><div class="side-col d-none d-lg-block col-lg-2"><aside class="sidebar" style="margin-left:-1rem"><div id="toc"><p class="toc-header"><i class="iconfont icon-list"></i> <span>目录</span></p><div class="toc-body" id="toc-body"></div></div></aside></div></div></div><a id="scroll-top-button" aria-label="TOP" href="#" role="button"><i class="iconfont icon-arrowup" aria-hidden="true"></i></a><div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header text-center"><h4 class="modal-title w-100 font-weight-bold">搜索</h4><button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body mx-3"><div class="md-form mb-5"><input type="text" id="local-search-input" class="form-control validate"> <label data-error="x" data-success="v" for="local-search-input">关键词</label></div><div class="list-group" id="local-search-result"></div></div></div></div></div></main><footer><div class="footer-inner"><div class="footer-content"><a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a></div></div></footer><script src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js"></script><link rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css"><script>NProgress.configure({showSpinner:!1,trickleSpeed:100}),NProgress.start(),window.addEventListener("load",(function(){NProgress.done()}))</script><script src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js"></script><script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script><script src="/js/events.js"></script><script src="/js/plugins.js"></script><script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script><script>!function(t,e){var i=Fluid.plugins.typing,n=e.getElementById("subtitle");n&&i&&i(n.getAttribute("data-typed-text"))}(window,document)</script><script src="/js/img-lazyload.js"></script><script>Fluid.utils.createScript("https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js",(function(){var t=jQuery("#toc");if(0!==t.length&&window.tocbot){var i=jQuery("#board-ctn").offset().top;window.tocbot.init(Object.assign({tocSelector:"#toc-body",contentSelector:".markdown-body",linkClass:"tocbot-link",activeLinkClass:"tocbot-active-link",listClass:"tocbot-list",isCollapsedClass:"tocbot-is-collapsed",collapsibleClass:"tocbot-is-collapsible",scrollSmooth:!0,includeTitleTags:!0,headingsOffset:-i},CONFIG.toc)),t.find(".toc-list-item").length>0&&t.css("visibility","visible"),Fluid.events.registerRefreshCallback((function(){if("tocbot"in window){tocbot.refresh();var t=jQuery("#toc");if(0===t.length||!tocbot)return;t.find(".toc-list-item").length>0&&t.css("visibility","visible")}}))}}))</script><script src="https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js"></script><script>Fluid.plugins.codeWidget()</script><script>Fluid.utils.createScript("https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js",(function(){window.anchors.options={placement:CONFIG.anchorjs.placement,visible:CONFIG.anchorjs.visible},CONFIG.anchorjs.icon&&(window.anchors.options.icon=CONFIG.anchorjs.icon);var n=(CONFIG.anchorjs.element||"h1,h2,h3,h4,h5,h6").split(","),o=[];for(var s of n)o.push(".markdown-body > "+s.trim());"left"===CONFIG.anchorjs.placement&&(window.anchors.options.class="anchorjs-link-left"),window.anchors.add(o.join(", ")),Fluid.events.registerRefreshCallback((function(){if("anchors"in window){anchors.removeAll();var n=(CONFIG.anchorjs.element||"h1,h2,h3,h4,h5,h6").split(","),o=[];for(var s of n)o.push(".markdown-body > "+s.trim());"left"===CONFIG.anchorjs.placement&&(anchors.options.class="anchorjs-link-left"),anchors.add(o.join(", "))}}))}))</script><script>Fluid.utils.createScript("https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js",(function(){Fluid.plugins.fancyBox()}))</script><script>Fluid.plugins.imageCaption()</script><script src="/js/local-search.js"></script><script src="/js/boot.js"></script><noscript><div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div></noscript></body></html>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/mathematics128/blog-images/img/icon.png">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/mathematics128/blog-images/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#26465f">
+  <meta name="author" content="mathematics128">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="来自你的消息: 如何在github pages上用hexo作为框架搭建个人博客？ 来自ChatAI的消息: 以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：   准备工作：  确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 yourusername.github.io ，其中 yourusername 是你的 GitHub 用户名。 确保你已经安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="More than Blog">
+<meta property="og:url" content="https://mathematics128.github.io/%E6%90%AD%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81%E6%8A%80%E6%9C%AF%E5%8A%9B%E5%90%97/chatai-659120429622/">
+<meta property="og:site_name" content="More than Blog">
+<meta property="og:description" content="来自你的消息: 如何在github pages上用hexo作为框架搭建个人博客？ 来自ChatAI的消息: 以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：   准备工作：  确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 yourusername.github.io ，其中 yourusername 是你的 GitHub 用户名。 确保你已经安">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-04T12:44:45.915Z">
+<meta property="article:modified_time" content="2023-07-25T12:44:46.941Z">
+<meta property="article:author" content="mathematics128">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>More than Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"mathematics128.github.io","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"https://cdn.jsdelivr.net/gh/mathematics128/blog-images/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 50vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>mathematics128</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://cdn.jsdelivr.net/gh/mathematics128/blog-images/img/banner.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-10-04 20:44" pubdate>
+          2023年10月4日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.9k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="来自你的消息">来自你的消息:</h2>
+<p>如何在github pages上用hexo作为框架搭建个人博客？</p>
+<h2 id="来自ChatAI的消息">来自ChatAI的消息:</h2>
+<p>以下是在 GitHub Pages 上使用 Hexo 框架搭建个人博客的基本步骤：</p>
+<ol>
+<li>
+<p>准备工作：</p>
+<ul>
+<li>确保你已经在 GitHub 上创建了一个新的仓库，仓库名称应该是 <code>yourusername.github.io</code> ，其中 <code>yourusername</code> 是你的 GitHub 用户名。</li>
+<li>确保你已经安装了 Node.js，可以在命令行中运行 <code>node -v</code> 来检查是否已安装。</li>
+<li>安装 Git，可以在命令行中运行 <code>git --version</code> 来检查是否已安装。</li>
+</ul>
+</li>
+<li>
+<p>初始化 Hexo 项目：</p>
+<ul>
+<li>在任意位置创建一个新的文件夹来存储你的 Hexo 项目。</li>
+<li>在命令行中切换到该文件夹，并运行以下命令来初始化 Hexo 项目：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install -g hexo-cli        // 全局安装 Hexo</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo init myblog               // 初始化 Hexo 项目</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">cd</span> myblog                      // 进入项目文件夹</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install                    // 安装 Hexo 的依赖项</span><br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>配置 Hexo：</p>
+<ul>
+<li>打开 <code>_config.yml</code> 文件，根据个人需求进行配置。至少需要配置 <code>url</code> 和 <code>deploy</code>：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">url:</span> <span class="hljs-string">https://yourusername.github.io</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:yourusername/yourusername.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>编写博客：</p>
+<ul>
+<li>使用 Hexo 命令来创建新的文章：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo new <span class="hljs-string">&quot;My First Blog&quot;</span></span><br></code></pre></td></tr></table></figure>
+</li>
+<li>使用 Markdown 或其他支持的语法来编写博客内容，在生成的 Markdown 文件中进行编辑。</li>
+</ul>
+</li>
+<li>
+<p>预览博客：</p>
+<ul>
+<li>运行以下命令来在本地预览你的博客：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo server</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>在浏览器中访问 <code>http://localhost:4000</code>，即可查看你的博客。</li>
+</ul>
+</li>
+<li>
+<p>部署到 GitHub Pages：</p>
+<ul>
+<li>首先，使用以下命令生成静态网站文件：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo generate</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>然后，运行以下命令将生成的文件部署到 GitHub Pages 上：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo deploy</span><br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>查看博客：</p>
+<ul>
+<li>现在，你可以在浏览器中访问 <code>https://yourusername.github.io</code> 来查看你的个人博客了。</li>
+</ul>
+</li>
+</ol>
+<p>请注意，以上步骤仅提供了 Hexo 的基础配置和部署到 GitHub Pages 的流程。要深入了解 Hexo 的更多功能和定制选项，请参考官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<h2 id="来自你的消息-2">来自你的消息:</h2>
+<p>如何在debian 11 上安装node.js？</p>
+<h2 id="来自ChatAI的消息-2">来自ChatAI的消息:</h2>
+<p>在 Debian 11 上安装 Node.js 可以按照以下步骤进行：</p>
+<ol>
+<li>
+<p>更新系统：<br>
+执行以下命令以获取最新的软件包列表并升级系统：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt update<br>sudo apt upgrade<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装 Node.js：</p>
+<ul>
+<li>在 Debian 11 中，可以通过 Node.js 官方的 NodeSource 仓库进行安装。</li>
+<li>首先，安装 Node.js 和 npm 的依赖项：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt install curl dirmngr apt-transport-https lsb-release ca-certificates<br></code></pre></td></tr></table></figure>
+</li>
+<li>下载并添加 NodeSource 仓库的 GPG 密钥：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/nodesource.gpg<br></code></pre></td></tr></table></figure>
+</li>
+<li>添加 NodeSource 仓库到 APT 的源列表中：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">echo &quot;deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node $(lsb_release -s -c) main&quot; | sudo tee /etc/apt/sources.list.d/nodesource.list<br></code></pre></td></tr></table></figure>
+</li>
+<li>更新仓库并安装 Node.js：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt update<br>sudo apt install nodejs<br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>验证安装：</p>
+<ul>
+<li>可以通过运行以下命令来验证 Node.js 和 npm 是否成功安装：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">node -v<br>npm -v<br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<p>现在，你已经成功在 Debian 11 上安装了 Node.js。你可以使用 Node.js 来运行 JavaScript 应用程序、搭建服务器、构建工具等等。根据你的需求，你还可以安装全局的 npm 包来扩展 Node.js 的功能。</p>
+<p>请注意，上述步骤假设你使用具备超级用户权限（sudo）的普通用户进行操作。</p>
+<h2 id="来自你的消息-3">来自你的消息:</h2>
+<p>如何在ArchLinux上安装nodejs？</p>
+<h2 id="来自ChatAI的消息-3">来自ChatAI的消息:</h2>
+<p>在 Arch Linux 上安装 Node.js 可以按照以下步骤进行：</p>
+<ol>
+<li>
+<p>更新系统：<br>
+执行以下命令以获取最新的软件包列表并升级系统：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo pacman -Syu<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装 Node.js：</p>
+<ul>
+<li>在 Arch Linux 中，可以通过官方软件库（Arch Linux 共同的软件库）进行安装。</li>
+<li>运行以下命令以安装 Node.js 和 npm：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo pacman -S nodejs npm<br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>验证安装：</p>
+<ul>
+<li>可以通过运行以下命令来验证 Node.js 和 npm 是否成功安装：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">node -v<br>npm -v<br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<p>现在，你已经成功在 Arch Linux 上安装了 Node.js。你可以使用 Node.js 来运行 JavaScript 应用程序、搭建服务器、构建工具等等。根据你的需求，你还可以安装全局的 npm 包来扩展 Node.js 的功能。</p>
+<p>请注意，上述步骤假设你使用具备超级用户权限（sudo）的普通用户进行操作。</p>
+<h2 id="来自你的消息-4">来自你的消息:</h2>
+<p>为什么arch可以直接用官方软件源而debian必须要添加nodesource仓库？</p>
+<h2 id="来自ChatAI的消息-4">来自ChatAI的消息:</h2>
+<p>在 Arch Linux 和 Debian 这两个发行版中，Node.js 的软件包管理方式是有所不同的，因此安装方法也略有差异。</p>
+<ol>
+<li>
+<p>Arch Linux：<br>
+Arch Linux 采用滚动更新模型，其官方软件库（Arch Linux 共同的软件库）提供了大量常用的软件包，包括最新版本的 Node.js。因此，你可以直接通过使用系统包管理器 <code>pacman</code> 来安装 Node.js 和 npm。</p>
+</li>
+<li>
+<p>Debian：<br>
+Debian 是一个基于稳定性和可靠性的发行版，其官方软件库提供了经过广泛测试和验证的软件包。但是，对于一些更新频繁且发展迅速的软件，如 Node.js，官方软件库可能提供的版本相对较旧。为了让用户能够体验到最新版本的 Node.js，可以使用 NodeSource 这样的第三方仓库，它专门提供了最新的 Node.js 软件包。</p>
+</li>
+</ol>
+<p>因此，在 Debian 中安装 Node.js 时，你需要添加 NodeSource 仓库以获取最新版本的 Node.js 软件包。这样可以确保你拥有最新的功能和修复的 bug。</p>
+<p>总结起来，Arch Linux 之所以可以直接使用官方软件源进行安装，是因为官方软件库中已经提供了最新的 Node.js 软件包；而在 Debian 中，添加 NodeSource 仓库可以使用户能够获得最新版本的 Node.js 软件包，以适应不断发展和更新的需求。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"mathematics128/mathematics128.github.io","repo-id":"R_kgDOJ2XLRg","category":"Announcements","category-id":"DIC_kwDOJ2XLRs4CYGEw","theme-light":"light","theme-dark":"dark","mapping":"url","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN","strict":0,"loading":"lazy"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
